@@ -10,7 +10,7 @@ import { computed, watch } from "vue";
 export default {
   name: "App",
   components: { Home },
-  created(): any {
+  created() {
     const store = useStore();
     store.dispatch("auth/tryLogin");
   },
