@@ -10,7 +10,7 @@ import { computed, watch } from "vue";
 export default {
   name: "App",
   components: { Home },
-  created() {
+  created(): void {
     const store = useStore();
     store.dispatch("auth/tryLogin");
   },
@@ -20,7 +20,7 @@ export default {
     const didAutoLogout = computed(() => {
       return store.getters["auth/didAutoLogout"];
     });
-    watch(didAutoLogout, (curVal: any, oldVal: any) => {
+    watch(didAutoLogout, (curVal: boolean, oldVal: boolean) => {
       if (curVal && curVal !== oldVal) {
         router.replace("/auth");
       }
