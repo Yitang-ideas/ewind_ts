@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "PingFangSCRegular";
+  src: url("../assets/fonts/PingFangSCRegular.ttf") format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 100px;
+}
+
+body{
+  font-size: .14rem;
+  font-family: "PingFangSCRegular";
+}
+
+.clearfix {
+  overflow: hidden;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+.db {
+  display: block;
+}
+.dib {
+  display: inline-block;
+}
+.tac {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li{
+  list-style: none;
+}
+
